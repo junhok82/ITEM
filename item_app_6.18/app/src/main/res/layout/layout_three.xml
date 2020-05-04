@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88FF8080"
+    android:orientation="vertical"
+    android:id="@+id/layout_three_total_Linear"
+    >
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="2"
+        android:stretchColumns="*"
+        android:id="@+id/layout_three_table"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/house" />
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/ivt3_1"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_home"
+                android:src="@drawable/text1_1" />
+
+            <ImageView
+                android:id="@+id/ivt3_2"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt1"
+                android:src="@drawable/text2_1" />
+
+            <ImageView
+                android:id="@+id/ivt3_3"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt2"
+                android:src="@drawable/text3_1" />
+
+            <ImageView
+                android:id="@+id/ivt3_4"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt3"
+                android:src="@drawable/text4_1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/gone_iv3_1"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <ImageView
+                android:id="@+id/gone_iv3_2"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/gone_iv3_3"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/gone_iv3_4"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="invisible"
+                />
+        </TableRow>
+    </TableLayout>
+
+
+
+    <!--************** 3번째 메인화면 ************ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_two"
+        android:orientation="vertical"
+        android:id="@+id/layout_three_linear1"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/gone_lin1_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <!--************** 예측 버튼 있는 화면 ************ -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_two_in"
+                android:id="@+id/lay3_rel1"
+                android:orientation="vertical"
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/predict_icon"
+                    android:id="@+id/predict_icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/predict_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="예측 시작하기"
+                    android:id="@+id/pre_tv"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="예측 중입니다..."
+                    android:id="@+id/predicting_text"
+                    android:textSize="25dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+            <!--************** 예측 그림이 있는 화면 ************ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/round_two_in"
+                android:id="@+id/pred_result_layout"
+                >
+                //예측 그림 뷰(레이아웃 상단)
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/pred_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#BDBDBD"/>
+
+                //레이아웃 하단
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    //레이아웃 하단의 좌측
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/re_prediction"
+                            android:textSize="20dp"
+                            />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#BDBDBD"/>
+
+                    //레이아웃 하단의 우측
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/product_use_text"
+                            android:textSize="20dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

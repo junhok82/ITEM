@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scale_lin2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8870AD47"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/gone_tb4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="2"
+        android:stretchColumns="*"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/house4" />
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/ivt4_1"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_home"
+                android:src="@drawable/text1_1" />
+
+            <ImageView
+                android:id="@+id/ivt4_2"
+                android:layout_width="89dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt1"
+                android:src="@drawable/text2_1" />
+
+            <ImageView
+                android:id="@+id/ivt4_3"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt2"
+                android:src="@drawable/text3_1" />
+
+            <ImageView
+                android:id="@+id/ivt4_4"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ivt3"
+                android:src="@drawable/text44" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/gone_iv4_1"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/gone_iv4_2"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/gone_iv4_3"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/gone_iv4_4"
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/select4"
+                android:visibility="visible" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/gone_lin4_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_two"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="9"
+            android:background="@drawable/round_two_in"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI 연결 방법 "
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/wifi_method"
+                />
+            <TextView
+                android:text="SKIP>"
+                android:layout_width="40dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/skip"
+               />
+
+
+        </RelativeLayout>
+
+        <!--************** 4번째 메인화면 ************ -->
+        <LinearLayout
+            android:id="@+id/gone_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <!--**********info01**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/info01">
+                <!--**********튜토리얼 첫번째 화면**********-->
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                   >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/info01_img"
+                        android:src="@drawable/wifi_setting_tutorial1"
+                        android:layout_weight="1"
+                        />
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text = "다음"
+                        android:id = "@+id/info01_next"
+                        />
+                   </RelativeLayout>
+               </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <!--**********info02**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info02">
+                <!--**************튜토리얼 두번째 화면**************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src = "@drawable/wifi_setting_tutorial2"
+                        android:id="@+id/info02_img"
+                        android:layout_weight="1"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text = "이전"
+                        android:id = "@+id/info02_previous"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight= "true"
+                        android:text = "다음"
+                        android:id = "@+id/info02_next"
+                        />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--**********info03**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info03">
+                <!--**************튜토리얼 세번째 화면**************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wifi_setting_tutorial3"
+                        android:id="@+id/info03_img"
+                        android:layout_weight="1"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text = "이전"
+                        android:id = "@+id/info03_previous"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text = "다음"
+                        android:id = "@+id/info03_next"
+                        />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--**********info04**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info05">
+                <!--**************튜토리얼 네번째 화면**************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src = "@drawable/wifi_setting_tutorial4"
+                        android:layout_weight="1"
+                        android:id="@+id/info05_img"
+                        />
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text = "이전"
+                        android:id = "@+id/info05_previous"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text = "다음"
+                        android:id = "@+id/info05_next"
+                        />
+                   </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--**********info05**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info06">
+                <!--**************튜토리얼 다섯번째 화면**************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wifi_setting_tutorial5"
+                        android:id="@+id/info06_img"
+                        android:layout_weight="1"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text = "이전"
+                            android:id = "@+id/info06_previous"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text = "다음"
+                            android:id = "@+id/info06_next"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--**********info06**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info07">
+                <!--**************튜토리얼 여섯번째 화면**************-->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   >
+
+                   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:id="@+id/info07_img"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/info07_img"
+                        android:text = "WIFI의 비밀번호를 입력한 후 '확인' 버튼을 눌러주세요."
+                        android:id="@+id/info07_text"
+                        />
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentLeft="true"
+                           android:text = "이전"
+                           android:id = "@+id/info07_previous"
+                           />
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:text = "다음"
+                           android:id = "@+id/info07_next"
+                           />
+                   </RelativeLayout>
+               </LinearLayout>
+            </LinearLayout>
+
+
+            <!--**********info07**********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_two_in"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/info08">
+                <!--**************튜토리얼 일곱번째 화면**************-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wifi_setting_tutorial6"
+                        android:layout_weight="1"
+                        android:id="@+id/info08_img"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text = "이전"
+                            android:id = "@+id/info08_previous"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text = "다음"
+                            android:id = "@+id/info08_next"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--************** scan 화면 ************ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id = "@+id/scan"
+                android:background="@drawable/round_two_in"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="scan on"
+                        android:id="@+id/switch_on"
+                    />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="scan off"
+                        android:id="@+id/switch_off"
+                        />
+
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1.5dp"
+                    android:id="@+id/listView"
+                    >
+                </ListView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
